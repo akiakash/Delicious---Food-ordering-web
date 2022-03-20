@@ -23,6 +23,14 @@ export const CardItems =
         content:"akiaksh",
         paragraph:"akiakash"
 
+    },
+    {
+        title:"akash",
+        subtitle:"aki",
+        image:"images/slider3.jpg",
+        content:"akiaksh",
+        paragraph:"akiakash"
+
     }
     
 ]

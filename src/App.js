@@ -1,17 +1,14 @@
 import React from "react";
-import ResponsiveAppBar from './components/NavBar'
-import Cards from "./Home/Cards/Cards";
-import Slider from "./Home/Slider/Slider"
+import Home from "./Home/Home";
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveAppBar />
-       
-        <Slider />
-        <Cards />
+     
+     <Home />
         
 
     </div>

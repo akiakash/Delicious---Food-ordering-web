@@ -9,7 +9,7 @@ import './Sliders.css';
 
 function Slider() {
   return (
-    <Carousel className='sliders'>
+    <Carousel className='sliders' >
       {SliderImages.map((item)=>(
         <Carousel.Item>
         <img

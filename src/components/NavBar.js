@@ -12,7 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+
+import './NavBar.css';
+
+const pages = ['Foods', 'Orders', 'Restaurants'] ;
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -34,8 +37,10 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
 
+
+
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{backgroundColor:"#E12B38"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -78,7 +83,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -91,7 +96,9 @@ const ResponsiveAppBar = () => {
           >
             LOGO
           </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+           
             {pages.map((page) => (
               <Button
                 key={page}

@@ -15,6 +15,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { CardItems } from './CardsItem';
+import './Cards.css'
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,13 +37,15 @@ export default function RecipeReviewCard() {
   };
 
   return (
-  <Card sx={{ maxWidth: 345 }} style={{marginLeft:"50px"}} >
+ 
+  <>
     {CardItems.map((item)=>(
-      <div>
+      <div className='cardss'>
+        <Card sx={{ maxWidth: 345, borderRadius:"30px" }} style={{position:"inline-block"}} >
         <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            
           </Avatar>
         }
         action={
@@ -110,10 +114,12 @@ export default function RecipeReviewCard() {
           </Typography>
         </CardContent>
       </Collapse>
+      </Card>
       </div>
     ))}
-    
+    </>
       
-    </Card>
+  
+   
   );
 }
